@@ -1,0 +1,406 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background: #1C1C1C;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.07);
+    padding: 0.5rem 0.5rem;
+    color: white;
+    height: 6.125rem;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.header__main-logo {
+    flex-shrink: 0;
+    max-width: 130px;
+}
+
+.header__calendar p:first-child {
+    font-size: 1.5rem;
+    font-weight: 100;
+}
+
+.header__calendar p:last-child {
+    font-size: 1rem;
+    font-weight: 100;
+}
+
+.legend__lecture {
+    color: #9faab5;
+    margin-right: 5px;
+}
+
+.legend__task {
+    color: purple;
+    margin-right: 5px;
+}
+
+.legend__deadline {
+    color:#c23934;
+    margin-right: 5px;
+}
+
+.legend__workshop {
+    color: #ff9a3c;
+    margin-right: 5px;
+}
+
+.legend__event {
+    color: #04844b;
+    margin-right: 5px;
+}
+
+.legend__webinar {
+    color: #16325c;
+    margin-right: 5px;
+}
+
+.legend {
+    padding-bottom: 2.5em;
+}
+
+.legend__item {
+    margin-right: 15px;
+}
+
+.calendar {
+    padding-top: 8.125rem;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.calendar__controls h2 {
+    font-size: 2.5em;
+    font-weight: 200;
+    color: #1C1C1C;
+    text-transform: uppercase;
+}
+
+.calendar__controls-toggle {
+    margin-top: 7px;
+    font-size: 0.75em;
+    color: black;
+}
+
+.week-mode {
+    margin-top: 5px;
+    margin-right: 10px;
+}
+
+.btn-icon {
+    color: black;
+}
+
+.calendar__day-names {
+    margin-bottom: 5px;
+}
+
+.day-name {
+    background-color: #1C1C1C;
+    font-size: 1rem;
+    border-radius: 3px;
+    color: white;
+    font-weight: bold;
+}
+
+.calendar__card {
+    height: 100%;
+}
+
+.calendar__day {
+    font-size: 1.25rem;
+}
+
+.calendar__card-disabled {
+    height: 100%;
+    padding: 0;
+    background: rgba(99, 99, 99, 0.12);
+    border: 1px solid #d8dde6;
+    border-radius: 0.25rem;
+    background-clip: padding-box;
+}
+
+.calendar__card-week {
+    height: 100%;
+    padding: 0;
+    background: rgba(99, 99, 99, 0.12);
+    color: black;
+    border: 1px solid rgba(8, 8, 8, 0.12);
+    border-radius: 0.25rem;
+    background-clip: padding-box;
+}
+
+.calendar__card-today {
+    height: 100%;
+    padding: 0;
+    background: rgba(21, 137, 238, 0.1);
+    border: 1px solid #d8dde6;
+    border-radius: 0.25rem;
+    background-clip: padding-box;
+}
+
+.card__label {
+    margin-bottom: 0.7em;
+}
+
+.card__label-link {
+    color: white;
+    text-transform: uppercase;
+}
+
+.card__label-link:hover {
+    color: white;
+}
+
+.event-label {
+    font-size: 0.9em;
+    width: 100%;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.lecture {
+    background-color: #9faab5;
+}
+
+.task {
+    background-color: purple;
+}
+
+.deadline {
+    background-color: #c23934;
+}
+
+.workshop {
+    background-color: #ff9a3c;
+}
+
+.event {
+    background-color: #04844b;
+}
+
+.webinar {
+    background-color: #16325c;
+}
+
+.lecture-border {
+    border-bottom: 2px solid #9faab5;
+}
+
+.task-border {
+    border-bottom: 2px solid purple;
+}
+
+.deadline-border {
+    border-bottom: 2px solid #c23934;
+}
+
+.workshop-border {
+    border-bottom: 2px solid #ff9a3c;
+}
+
+.event-border {
+    border-bottom: 2px solid #04844b;
+}
+
+.webinar-border {
+    border-bottom: 2px solid #16325c;
+}
+
+.event-modal__header {
+    position: relative;
+    border-top-right-radius: 0.25rem;
+    border-top-left-radius: 0.25rem;
+    background-color: #fdfdfd;
+    padding: 1rem;
+    text-align: center;
+}
+
+.event-modal__h2 {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.event-modal__time {
+    font-size: 2.2em;
+    padding-left: 30px;
+}
+
+.event-modal__trainers {
+    font-size: 1.2em;
+    padding-right: 30px;
+}
+
+.event-modal__resources h3 {
+    text-transform: uppercase;
+}
+
+.event-modal__feedback {
+    position: relative;
+}
+
+.event-modal__feedback button {
+    position: absolute;
+}
+
+.icon-margin {
+    margin-right: 15px;
+}
+
+.year-position {
+    margin-left: 43%;
+}
+
+@media (max-width: 950px) {
+    .week-mode {
+        font-size: 0.5rem;
+    }
+
+    .calendar__day {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 800px) {
+    .calendar__event-time span{
+        display: none;
+    }
+}
+
+@media (min-width: 650px) and (max-width: 767px) {
+    .center-position {
+        margin-left: 0;
+    }
+
+    .week-mode {
+        margin-right: 10px;
+        font-size: 0.5rem;
+    }
+
+    .year-position {
+        margin-left: 0;
+    }
+
+    .calendar__controls {
+        margin-bottom: 15px;
+    }
+
+    .calendar__controls h2 {
+        font-size: 1.5em;
+    }
+
+    .calendar__day {
+        font-size: 0.8rem;
+    }
+
+    .icon-calendar {
+        font-size: 0.4em;
+    }
+
+    .icon-margin {
+        margin-right: 5px;
+    }
+}
+
+@media (min-width: 450px) and (max-width: 650px) {
+    .calendar__event-time span {
+        display: none;
+    }
+
+    .calendar__event-title a {
+        display: none;
+    }
+
+    .center-position {
+        margin-left: 0;
+    }
+
+    .week-mode {
+        margin-right: 10px;
+        font-size: 0.5rem;
+    }
+
+    .year-position {
+        margin-left: 0;
+    }
+
+    .calendar__controls {
+        margin-bottom: 15px;
+    }
+
+    .calendar__controls h2 {
+        font-size: 1.5em;
+    }
+
+    .calendar__day {
+        font-size: 0.7rem;
+    }
+
+    .calendar__day span {
+        display: none;
+    }
+
+    .icon-margin {
+        margin-right: 5px;
+    }
+
+    .event-modal__time {
+        font-size: 1.9rem;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 450px) {
+    .calendar__event-time span {
+        display: none;
+    }
+
+    .calendar__event-title a {
+        display: none;
+    }
+
+    .center-position {
+        margin-left: 0;
+    }
+
+    .week-mode {
+        margin-right: 10px;
+        font-size: 0.5rem;
+    }
+
+    .year-position {
+        margin-left: 0;
+    }
+
+    .calendar__controls {
+        margin-bottom: 15px;
+    }
+
+    .calendar__controls h2 {
+        font-size: 1.5em;
+    }
+
+    .calendar__day {
+        font-size: 0.6rem;
+        font-weight: bold;
+    }
+
+    .calendar__day span {
+        display: none;
+    }
+
+    .icon-margin {
+        margin-right: 5px;
+    }
+
+    .event-modal__time {
+        font-size: 1.6em;
+        padding-left: 0;
+    }
+
+    .event-modal__trainers {
+        font-size: 0.9em;
+    }
+}

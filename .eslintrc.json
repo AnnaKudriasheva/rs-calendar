@@ -1,0 +1,14 @@
+{
+  "extends": "airbnb",
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "sourceType": "module"
+  },
+  "rules": {
+    "indent": ["error", 4],
+    "semi": ["error", "always"],
+    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+    "import/no-extraneous-dependencies": [ "error", { "devDependencies": true }],
+    "react/jsx-indent": ["error", 4]
+  }
+}
